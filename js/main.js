@@ -10,3 +10,4 @@ function toggleMenu() {
 let menu_icon = document.getElementById('nav_icon1');
 
 menu_icon.addEventListener('click', toggleMenu);
+
