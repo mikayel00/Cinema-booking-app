@@ -97,7 +97,7 @@
     }
     .login_container {
         right: 10px;
-        }
+    }
 }
 
 @media (max-width: 475px){
@@ -119,11 +119,11 @@
 }
 .login_container{
     background-color: #ffffff;
-    padding: 25px;
+    padding: 24px;
     border-radius: 6px;
     height: 220px;
     width: 200px;
-    margin-top: 0px;
+    margin-top: 0;
     display: none;
     position: absolute;
     z-index: 1;
@@ -132,7 +132,7 @@
     right: 15px;
 }
 .login_container h2 {
-        color: #c48600;
+    color: #c48600;
 }
 .login_input{
     margin: 5px 0;
@@ -157,21 +157,21 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
-  }
+}
 
   ::placeholder{
-      padding-left: 7px;
-  }
+    padding-left: 6px;
+}
   .forgot_pass{
-      color: rgb(0, 0, 0);
-      font-size: 12px;
-      float: none;
-      color: rgb(0, 0, 0);
-      padding: 0px 2px;
-      text-decoration: none;
-      display: block;
-      text-align: center;
-  }
+    color: #000000;;
+    font-size: 12px;
+    float: none;
+    color: #000000;;
+    padding: 0px 2px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
   .forgot_pass:hover{
-      color: #c48600;
-  }
+    color: #c48600;
+}
