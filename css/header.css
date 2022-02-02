@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .logo {
@@ -24,6 +25,7 @@
 .menu {
     display: flex;
     align-items: center;
+    
 }
 .menu__list {
     display: flex;
@@ -58,6 +60,7 @@
     display: flex;
     margin-left: auto;
     flex-wrap: wrap;
+    position: relative;
 }
 .login__section {
     color: #b3b3b3;
@@ -95,9 +98,6 @@
     .menu__item {
         margin: 6px;
     }
-    .login_container {
-        right: 10px;
-    }
 }
 
 @media (max-width: 475px){
@@ -110,26 +110,26 @@
     .menu__login{
         margin: 0;
     }
-
 }
-  
 
-.login:hover .login_container{
-    display: block;
+@media (min-width: 476px){
+    .login:hover .login_container{
+        display: block;
+    }
 }
+
 .login_container{
     background-color: #ffffff;
     padding: 24px;
     border-radius: 6px;
     height: 220px;
     width: 200px;
-    margin-top: 0;
     display: none;
     position: absolute;
     z-index: 1;
     align-items: center;
     text-align: center;
-    right: 15px;
+    right: 50px;
 }
 .login_container h2 {
     color: #c48600;
