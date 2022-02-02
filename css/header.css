@@ -123,7 +123,6 @@
     border-radius: 6px;
     height: 220px;
     width: 200px;
-    float: right;
     margin-top: 0px;
     display: none;
     position: absolute;
@@ -152,7 +151,7 @@
 .login_button {
     background-color:#c48600;
     border-radius: 6px;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 8px 50px;
     text-align: center;
     font-size: 16px;
@@ -164,7 +163,7 @@
       padding-left: 7px;
   }
   .forgot_pass{
-      color: black;
+      color: rgb(0, 0, 0);
       font-size: 12px;
       float: none;
       color: rgb(0, 0, 0);
