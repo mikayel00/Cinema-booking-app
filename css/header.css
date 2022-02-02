@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .logo {
@@ -30,6 +31,7 @@
 .menu {
     display: flex;
     align-items: center;
+    
 }
 .menu__list {
     display: flex;
@@ -64,6 +66,7 @@
     display: flex;
     margin-left: auto;
     flex-wrap: wrap;
+    position: relative;
 }
 .login__section {
     color: #b3b3b3;
@@ -154,5 +157,68 @@
     #nav_icon1{
         display: block;
     }
+}
 
+@media (min-width: 476px){
+    .login:hover .login_container{
+        display: block;
+    }
+}
+
+.login_container{
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 6px;
+    height: 220px;
+    width: 200px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    right: 50px;
+}
+.login_container h2 {
+    color: #c48600;
+}
+.login_input{
+    margin: 5px 0;
+    height: 40px;
+}
+
+.login_input input{
+    height: 80%;
+    width: 100%;
+    outline: none;
+    border: 1.5px solid #4267B2;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+.login_button {
+    background-color:#c48600;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    padding: 8px 50px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+  ::placeholder{
+    padding-left: 6px;
+}
+  .forgot_pass{
+    color: #000000;;
+    font-size: 12px;
+    float: none;
+    color: #000000;;
+    padding: 0px 2px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  .forgot_pass:hover{
+    color: #c48600;
 }
