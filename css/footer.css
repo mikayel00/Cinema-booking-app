@@ -169,3 +169,14 @@
         padding: 0;
     }
 }
+@media (max-width: 450px){
+    .newsletter__form input[type=email]{
+        width: 200px;
+    }
+    .social__links{
+        flex-direction: column;
+    }
+    .social__title{
+        white-space: wrap;
+    }
+}
