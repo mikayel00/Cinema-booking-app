@@ -15,7 +15,7 @@
 }
 
 .ticket__block {
-    margin: 60px 0 0 0;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,16 +30,16 @@
     font-size: 22px;
 }
 .section__name {
-    margin: 0 0 0 -50px;
-    padding: 0 50px 0 0;
+    margin-left: -50px;
+    padding-right: 50px;
 }
 .space__seat{
-    margin: 0 6px 0 0;
+    margin-right: 6px;
     width: 20px;
     height: 20px;
 }
 .seat:not(:last-child){
-    margin: 0 6px 0 0;
+    margin-right: 6px;
 }
 .seat {
     display: flex;
@@ -70,7 +70,7 @@
 }
 
 .ticket__icons {
-    margin: 50px 0 0 0;
+    margin-top: 50px;
     display: flex;
     flex: 1 1 auto;
 }
@@ -110,7 +110,7 @@
 }
 
 .ticket__total{
-    margin: 20px 0 0 0;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
@@ -135,7 +135,7 @@
 }
 @media (max-width: 900px){
     .ticket__title{
-        margin: 50px 0 0 0;
+        margin-top: 50px;
     }
 }
 @media (max-width: 750px){
@@ -151,7 +151,7 @@
         font-size: 22px;
     }
     .ticket__block {
-        margin: 20px 0 0 0;
+        margin-top: 20px;
     }
     .ticket__icons__item{
         font-size: 16px;
@@ -180,11 +180,11 @@
         font-size: 16px;
     }
     .section__name {
-        margin: 0 0 0 -20px;
-        padding: 0 20px 0 0;
+        margin-left: -20px;
+        padding-right: 20px;
     }
     .space__seat{
-        margin: 0 6px 0 0;
+        margin-right: 6px;
         width: 10px;
         height: 10px;
     }
@@ -209,7 +209,6 @@
         font-size: 16px;
     }
     .space__seat{
-        margin: 0 6px 0 0;
         width: 6px;
         height: 6px;
     }
@@ -217,13 +216,12 @@
 
 @media (max-width: 400px){
     .space__seat{
-        margin: 0 6px 0 0;
         width: 2px;
         height: 2px;
     }
     .section__name {
-        margin: 0 0 0 -10px;
-        padding: 0 10px 0 0;
+        margin-left:-10px;
+        padding-right: 10px;
     }
     .ticket__display img{
         max-width: 200px;

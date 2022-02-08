@@ -1,16 +1,12 @@
-let place = [];
-let price = [];
+const place = [];
+const price = [];
 function gettingID(clickID,event){
-
-    let sliceTo = event.target.className.slice(10, 12);
 
     if(classCheck(clickID,event)){
         event.target.classList.toggle('selected')
         if(event.target.className.includes('selected')){
-            if(sliceTo.endsWith(" ")){
-                sliceTo = event.target.className.slice(10, 11);
-            }
-            place.push(clickID + sliceTo);
+            seatNum(event);
+            place.push(rowName(clickID) + seatNum(event));
             price.push(highPrice(clickID));
             blockAdder(place,clickID,event);
         }
@@ -31,23 +27,34 @@ function reducer(total, num){
     return total + num;
 }
 
+function rowName(clickID){
+    let num;
+    for(let i = 0;i<clickID.length;i++){
+        num = clickID.indexOf('-');
+        if(num){
+            break;
+        }
+    }
+    return clickID.slice(num+1);
+}
+
 function seatNum(event){
-    if(event.target.className.slice(10, 12).endsWith(" ")){
+    if(event.target.className.slice(10, 12) < 10){
         return event.target.className.slice(10, 11);
     }
-    return event.target.className.slice(10, 12);;
+    return event.target.className.slice(10, 12);
 }
 
 function blockAdder(place,clickID,event){
     if(event.target.className.includes('selected')){
         let list = document.getElementById("order__item");
         let li = document.createElement("li");
-        li.innerHTML = 'Row: ' + clickID + " Seat: " + seatNum(event) + " Price: " + highPrice(clickID) + " AMD";
+        li.innerHTML = 'Row: ' + rowName(clickID) + " Seat: " + seatNum(event) + " Price: " + highPrice(clickID) + " AMD";
         list.appendChild(li);
     }else{
         let list = document.getElementById("order__item");
         for(let i = 0;i < list.childNodes.length; i++){
-            if(list.childNodes[i].innerText == 'Row: ' + clickID + " Seat: " + seatNum(event) + " Price: " + highPrice(clickID) + " AMD"){
+            if(list.childNodes[i].innerText == 'Row: ' + rowName(clickID) + " Seat: " + seatNum(event) + " Price: " + highPrice(clickID) + " AMD"){
                 list.removeChild(list.childNodes[i]);
                 break;
             }
@@ -56,24 +63,22 @@ function blockAdder(place,clickID,event){
 }
 
 function classCheck(clickID,event){
-    if( event.target.className.includes('seat-') && !(event.target.className.includes('unable'))){
-        return true;
-    }
+    return event.target.className.includes('seat-') && !(event.target.className.includes('unable'));
 }
 
 function highPrice(clickID){
-    if(clickID == "F" || clickID == "G"){
+    if(clickID.includes('F') || clickID.includes('G')){
         return 2000;
     }
     return 1500;
 }
 
 function placeRemover(clickID,event){
-    let index = place.indexOf(clickID + event.target.className.slice(10, 12));
+    let index = place.indexOf(rowName(clickID) + seatNum(event));
+    
     if (index > -1) {
         place.splice(index, 1);
     }
-    let indexPrice = price.indexOf(clickID + event.target.className.slice(10, 12));
     if (index > -1) {
         price.splice(index, 1);
     }
