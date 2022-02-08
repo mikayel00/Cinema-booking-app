@@ -1,0 +1,244 @@
+.page__ticket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ticket__container {
+    z-index: 4;
+}
+.ticket__title {
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 10px;
+}
+
+.ticket__block {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+.section__name {
+    margin-left: -50px;
+    padding-right: 50px;
+}
+.space__seat{
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+}
+.seat:not(:last-child){
+    margin-right: 6px;
+}
+.seat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #f8a145;
+    transition: all .15s linear;
+    cursor: pointer;
+}
+.selected{
+    background-color: #d35100;
+}
+.seat:hover{
+    background-color: #fff;
+    color: #151515;
+}
+
+.unable {
+    background-color: #b3b3b3;
+}
+.unable:hover{
+    background-color: #b3b3b3;
+    color:#fff;
+    cursor: default;
+}
+
+.ticket__icons {
+    margin-top: 50px;
+    display: flex;
+    flex: 1 1 auto;
+}
+.ticket__icons__item {
+    text-align: center;
+    margin: 0 20px;
+    width: 100%;
+}
+
+.seat__aval {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8a145;
+}
+
+.seat__unaval{
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #b3b3b3;
+}
+
+.seat__select{
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #d35100;
+}
+
+#ticket__order {
+    margin: 50px 20px 0 20px;
+    padding: 20px;
+    display: none;
+    border: 1px solid #b3b3b3;
+    border-radius: 8px;
+}
+#order__item{
+    font-size: 20px;
+}
+
+.ticket__total{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.total__title{
+    font-size: 22px;
+}
+#order__total{
+    font-size: 22px;
+}
+
+.order__button {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #f8a145;
+    color: #fff;
+    transition: all .15s linear;
+}
+
+.order__button:hover{
+    background-color: #fff;
+    color: #151515;
+}
+@media (max-width: 900px){
+    .ticket__title{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 750px){
+    .seat {
+        width: 30px;
+        height: 30px;
+    }
+    .section{
+        margin: 8px 0;
+        font-size: 20px;
+    }
+    .ticket__title {
+        font-size: 22px;
+    }
+    .ticket__block {
+        margin-top: 20px;
+    }
+    .ticket__icons__item{
+        font-size: 16px;
+    }
+    .seat__aval,.seat__unaval,.seat__select {
+        padding: 6px;
+    }
+    .total__title{
+        font-size: 20px;
+    }
+    #order__total{
+        font-size: 20px;
+    }
+    .order__button{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 650px){
+    .seat {
+        width: 25px;
+        height: 25px;
+    }
+    .section{
+        margin: 5px 0;
+        font-size: 16px;
+    }
+    .section__name {
+        margin-left: -20px;
+        padding-right: 20px;
+    }
+    .space__seat{
+        margin-right: 6px;
+        width: 10px;
+        height: 10px;
+    }
+    .total__title{
+        font-size: 16px;
+    }
+    #order__total{
+        font-size: 16px;
+    }
+    .order__button{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px){
+    .seat {
+        width: 20px;
+        height: 20px;
+    }
+    .section{
+        margin: 2px 0;
+        font-size: 16px;
+    }
+    .space__seat{
+        width: 6px;
+        height: 6px;
+    }
+}
+
+@media (max-width: 400px){
+    .space__seat{
+        width: 2px;
+        height: 2px;
+    }
+    .section__name {
+        margin-left:-10px;
+        padding-right: 10px;
+    }
+    .ticket__display img{
+        max-width: 200px;
+    }
+    .ticket__icons__item{
+        font-size: 14px;
+        margin: 0 10px;
+        width: 50%;
+    }
+    #order__total{
+        font-size: 16px;
+    }
+    .order__button{
+        font-size: 16px;
+    }
+    #order__item {
+        font-size: 16px;
+    }
+}
+
