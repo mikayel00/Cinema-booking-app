@@ -1,0 +1,94 @@
+.blog_movies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.blog_title{
+
+    text-align: center;
+    color: rgb(212, 108, 10);
+    font-size: revert;
+    padding: 2%;
+}
+.discussed{
+    display: flex;
+}
+.discussed1{
+    flex-direction: row-reverse;
+    padding-top: 4%;
+}
+.discussed_movies{
+    width: 40%;
+    margin-left: 6%;
+
+}
+.discussed_movies_item{
+    width: 70%;
+    cursor: pointer;
+}
+.blog_body{
+    background-image: url(../img/movie_blog/blog_news_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+.pt-100{
+    padding-top:100px ;
+}
+
+.main {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+ 
+  .upcoming_movies {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .item_movie
+  {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .item_movie{
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      float: left;
+  }
+  .blog_img {
+    width: 200px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  @media (min-width: 992px) {       
+    .item_movie {
+      width: 25%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .main {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .main {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .main {
+      width: 1170px;
+    }
+  }
