@@ -14,7 +14,7 @@
     z-index: 3;
   }
   
-  .prev, .next {
+  .arrows {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -34,7 +34,7 @@
     border-radius: 4px 0 0 4px;
   }
   
-  .prev:hover, .next:hover {
+  .arrows:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
@@ -239,7 +239,7 @@
       } 
   }
    @media (max-width: 500px) {
-      .prev, .next {
+      .arrows {
         font-size: 10px
       }
   }
