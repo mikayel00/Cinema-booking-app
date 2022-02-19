@@ -33,24 +33,18 @@ document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
         const upcommingMoviesContainer = document.querySelector('.upcoming_movies');
         moviesContent.forEach(element => {
-           
-            //item_movie wrapper
             let upcommingMoviesItemContainer = document.createElement('div'); 
             upcommingMoviesItemContainer.className = 'item_movie'; 
            
-            //link to upcomming movies 
             let movieLink = document.createElement('a');
             movieLink.target = '_blank';
             movieLink.href = element.href;
             
-            //upcomming movies title
             let movieImg = document.createElement('img');
             movieImg.class = 'blog_img';
             movieImg.src = element.img;
             movieImg.title = element.title;
             movieImg.alt = element.alt;
-
-            //appending
             movieLink.appendChild(movieImg);
             upcommingMoviesItemContainer.appendChild(movieLink);
             upcommingMoviesContainer.appendChild(upcommingMoviesItemContainer);
@@ -58,4 +52,5 @@ document.onreadystatechange = () => {
         });
     }
   };
+
   

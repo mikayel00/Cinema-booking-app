@@ -27,14 +27,8 @@
     cursor: pointer;
 }
 .blog_body{
-    background-image: url(../img/movie_blog/blog_news_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: auto;
-}
-.pt-100{
-    padding-top:100px ;
+  position: relative;
+  z-index: 4;
 }
 
 .main {
@@ -91,4 +85,5 @@
   .film_description{
     margin-top: 10%;
   }
+  
   
