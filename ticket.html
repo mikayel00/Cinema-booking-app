@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/ticket.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Buy Ticket | Coliseum Cinema</title>
 </head>
@@ -111,6 +112,151 @@
             </div>
         </header>
         <main class="page">
+            <div class="page__ticket">
+                <div class="ticket__container _container">
+                    <div class="ticket__title">Select your seats for booking tickets</div>
+                    <div class="ticket__block">
+                        <div class="ticket__display">
+                            <img src="img/cinema_line.png" alt="">
+                        </div>
+                        <div class="section__list">
+                            <div class="section" id="row-A" onClick="gettingID(this.id,event)">
+                                <span class="section__name">A</span>
+                                <div class="seat seat-1 unable">1</div>
+                                <div class="seat seat-2 unable">2</div>
+                                <div class="seat seat-3">3</div>
+                                <div class="seat seat-4">4</div>
+                                <div class="seat seat-5">5</div>
+                                <div class="seat seat-6">6</div>
+                                <div class="space__seat"></div>
+                                <div class="seat seat-7">7</div>
+                                <div class="seat seat-8">8</div>
+                                <div class="seat seat-9">9</div>
+                                <div class="seat seat-10">10</div>
+                                <div class="seat seat-11">11</div>
+                                <div class="seat seat-12">12</div>
+                            </div>
+                            <div class="section" id="row-B" onClick="gettingID(this.id,event)">
+                                <span class="section__name">B</span>
+                                <div class="seat seat-1">1</div>
+                                <div class="seat seat-2">2</div>
+                                <div class="seat seat-3">3</div>
+                                <div class="seat seat-4">4</div>
+                                <div class="seat seat-5 unable">5</div>
+                                <div class="seat seat-6">6</div>
+                                <div class="space__seat"></div>
+                                <div class="seat seat-7 unable">7</div>
+                                <div class="seat seat-8 unable">8</div>
+                                <div class="seat seat-9">9</div>
+                                <div class="seat seat-10">10</div>
+                                <div class="seat seat-11">11</div>
+                                <div class="seat seat-12">12</div>
+                            </div>
+                            <div class="section" id="row-C" onClick="gettingID(this.id,event)">
+                                <span class="section__name">C</span>
+                                <div class="seat seat-1">1</div>
+                                <div class="seat seat-2">2</div>
+                                <div class="seat seat-3">3</div>
+                                <div class="seat seat-4">4</div>
+                                <div class="seat seat-5">5</div>
+                                <div class="seat seat-6">6</div>
+                                <div class="space__seat"></div>
+                                <div class="seat seat-7">7</div>
+                                <div class="seat seat-8">8</div>
+                                <div class="seat seat-9">9</div>
+                                <div class="seat seat-10">10</div>
+                                <div class="seat seat-11">11</div>
+                                <div class="seat seat-12">12</div>
+                            </div>
+                            <div class="section" id="row-D" onClick="gettingID(this.id,event)">
+                                <span class="section__name">D</span>
+                                <div class="seat seat-1">1</div>
+                                <div class="seat seat-2">2</div>
+                                <div class="seat seat-3">3</div>
+                                <div class="seat seat-4 unable">4</div>
+                                <div class="seat seat-5">5</div>
+                                <div class="seat seat-6">6</div>
+                                <div class="space__seat"></div>
+                                <div class="seat seat-7 unable">7</div>
+                                <div class="seat seat-8 unable">8</div>
+                                <div class="seat seat-9">9</div>
+                                <div class="seat seat-10">10</div>
+                                <div class="seat seat-11">11</div>
+                                <div class="seat seat-12 unable">12</div>
+                            </div>
+                            <div class="section" id="row-E" onClick="gettingID(this.id,event)">
+                                <span class="section__name">E</span>
+                                <div class="seat seat-1">1</div>
+                                <div class="seat seat-2">2</div>
+                                <div class="seat seat-3">3</div>
+                                <div class="seat seat-4">4</div>
+                                <div class="seat seat-5">5</div>
+                                <div class="seat seat-6">6</div>
+                                <div class="space__seat"></div>
+                                <div class="seat seat-7">7</div>
+                                <div class="seat seat-8">8</div>
+                                <div class="seat seat-9">9</div>
+                                <div class="seat seat-10">10</div>
+                                <div class="seat seat-11">11</div>
+                                <div class="seat seat-12">12</div>
+                            </div>
+                            <div class="section" id="row-F" onClick="gettingID(this.id,event)">
+                                <span class="section__name">F</span>
+                                <div class="seat seat-1">1</div>
+                                <div class="seat seat-2">2</div>
+                                <div class="seat seat-3">3</div>
+                                <div class="seat seat-4">4</div>
+                                <div class="seat seat-5 unable">5</div>
+                                <div class="seat seat-6 unable">6</div>
+                                <div class="space__seat"></div>
+                                <div class="seat seat-7">7</div>
+                                <div class="seat seat-8">8</div>
+                                <div class="seat seat-9">9</div>
+                                <div class="seat seat-10">10</div>
+                                <div class="seat seat-11">11</div>
+                                <div class="seat seat-12 unable">12</div>
+                            </div>
+                            <div class="section" id="row-G" onClick="gettingID(this.id,event)">
+                                <span class="section__name">G</span>
+                                <div class="seat seat-1">1</div>
+                                <div class="seat seat-2">2</div>
+                                <div class="seat seat-3">3</div>
+                                <div class="seat seat-4">4</div>
+                                <div class="seat seat-5">5</div>
+                                <div class="seat seat-6">6</div>
+                                <div class="space__seat"></div>
+                                <div class="seat seat-7">7</div>
+                                <div class="seat seat-8">8</div>
+                                <div class="seat seat-9">9</div>
+                                <div class="seat seat-10">10</div>
+                                <div class="seat seat-11">11</div>
+                                <div class="seat seat-12">12</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket__icons">
+                        <span class="ticket__icons__item">
+                            <div class="seat__aval">Available</div>
+                        </span>
+                        <span class="ticket__icons__item">
+                            <div class="seat__select">Selected</div>
+                        </span>
+                        <span class="ticket__icons__item">
+                            <div class="seat__unaval">Unavailable</div>
+                        </span>
+                    </div>
+                    <div id="ticket__order">
+                        <ul id="order__item"></ul>
+                        <div class="ticket__total">
+                            <span class="total__title">Total:</span>
+                            <span id="order__total"></span>
+                            <span class="order__link">
+                                <a href="login.html" class="order__button">Reserve Now</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <video preload="auto" loop autoplay muted class="video" src="src/bg.webm"></video>
         </main>
     </div>
@@ -164,6 +310,7 @@
         </div>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/ticket.js"></script>
 </body>
 
 </html>
