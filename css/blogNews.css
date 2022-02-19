@@ -13,7 +13,7 @@
 .discussed{
     display: flex;
 }
-.discussed1{
+.next_discussed{
     flex-direction: row-reverse;
     padding-top: 4%;
 }
@@ -69,7 +69,7 @@
   }
   @media (min-width: 992px) {       
     .item_movie {
-      width: 25%;
+      width: 24%;
     }
   }
 
