@@ -1,0 +1,92 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: #f8a145;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__register {
+    position: relative;
+    border-radius: 8px;
+    padding: 50px;
+    background-color: #fff;
+}
+.back__website{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.register__input{
+    box-sizing: content-box;
+    width: 100%;
+}
+
+.register__item{
+    margin: 3px auto;
+    padding: 16px;
+    border: 1px solid #b3b3b3;
+    width: 100%;
+    border-radius: 8px;
+    min-width: 120px;
+    font-size: 16px;
+    transition: all .15s linear;
+}
+.register__item:hover{
+    border: 1px solid #f8a145;
+}
+.register__item:focus{
+    border: 1px solid #d35100;
+}
+
+.register__input label{
+    margin: 50px 0;
+}
+
+.title{
+    padding: 10px 0;
+}
+.terms {
+    padding-top: 10px;
+    font-style: italic;
+    text-decoration: underline;
+    color: #30444E;
+}
+input[type=checkbox]{
+    margin-right: 10px;
+}
+.register__submit {
+    padding-top: 15px;
+}
+.register__send {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #d35100;
+    transition: all .15s linear;
+    color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+.register__send:hover {
+    background-color: #f8a145;
+}
+
+.login__line{
+    margin-top: 10px;
+    border: 1px solid #b3b3b3;
+}
+
+.back{
+    font-size: 14px;
+    transition: all .15s linear;
+    color: #f8a145;
+}
+.back:hover {
+    color: #d35100;
+}

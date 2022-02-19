@@ -68,9 +68,9 @@ function classCheck(clickID,event){
 
 function highPrice(clickID){
     if(clickID.includes('F') || clickID.includes('G')){
-        return 2000;
+        return 3500;
     }
-    return 1500;
+    return 2500;
 }
 
 function placeRemover(clickID,event){
