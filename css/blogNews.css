@@ -1,0 +1,89 @@
+.blog_movies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.blog_title{
+
+    text-align: center;
+    color: rgb(212, 108, 10);
+    font-size: revert;
+    padding: 2%;
+}
+.discussed{
+    display: flex;
+}
+.next_discussed{
+    flex-direction: row-reverse;
+    padding-top: 4%;
+}
+.discussed_movies{
+    width: 40%;
+    margin-left: 6%;
+
+}
+.discussed_movies_item{
+    width: 70%;
+    cursor: pointer;
+}
+.blog_body{
+  position: relative;
+  z-index: 4;
+}
+
+.main {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+ 
+  .upcoming_movies {
+    margin-right: -16px;
+    margin-left: -16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+   
+  .item_movie{
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      float: left;
+      padding-right: 16px;
+      padding-left: 16px;
+  }
+  .blog_img {
+    width: 200px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  @media (min-width: 992px) {       
+    .item_movie {
+      width: 24%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .main {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .main {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .main {
+      width: 1170px;
+    }
+  }
+  .film_description{
+    margin-top: 10%;
+  }
+  
+  
