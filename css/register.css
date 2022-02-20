@@ -28,7 +28,7 @@ body{
 }
 
 .register__item{
-    margin: 3px auto;
+    margin: 4px auto;
     padding: 16px;
     border: 1px solid #b3b3b3;
     width: 100%;
@@ -61,7 +61,7 @@ input[type=checkbox]{
     margin-right: 10px;
 }
 .register__submit {
-    padding-top: 15px;
+    padding-top: 16px;
 }
 .register__send {
     width: 100%;
