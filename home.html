@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/movies.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Buy Ticket | Coliseum Cinema</title>
 </head>
@@ -112,45 +113,12 @@
             </div>
         </header>
         <main class="page">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                  <img class="slide-photo" src="img/movie_photo/Spider-man.png">
-                  <div class="film-header">Spider-Man: No Way Home (2021)</div>
-                  <a class="film-genre">Action,Adventure,Fantasy • 2h 28m</a>
-                  <p class="about-film">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.</p>
-                  <p class="small-about-film">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous...</p>
-                  <p class="small-about-film2">With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell...</p>
-                  <button onclick="window.location.href='ticket.html'" class="get-ticket">Get Tickets</button>
-                  <button class="ticket-price">2500 AMD/3500 AMD</button>
-                  <button class="more-about">More about movie</button>
-                </div>
-                
-                <div class="mySlides">
-                  <img class="slide-photo" src="img/movie_photo/hotel.png">
-                  <div class="film-header">Hotel Transylvania: Transformania (2022)</div>
-                  <a class="film-genre">Animatin,Adventure,Comedy • 1h 27m</a>
-                  <p class="about-film">After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to be seen whether they will be able to reverse this experiment.</p>
-                  <p class="small-about-film">After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to be seen whether they...</p>
-                  <p class="small-about-film2">After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to...</p>
-                  <button onclick="window.location.href='ticket.html'" class="get-ticket">Get Tickets</button>
-                  <button class="ticket-price">2500 AMD/3500 AMD</button>
-                  <button class="more-about">More about movie</button>
-                </div>
-                
-                <div class="mySlides">
-                  <img class="slide-photo" src="img/movie_photo/avatar.png">
-                  <div class="film-header">AVATAR 2: The Way of Water (2022)</div>
-                  <a class="film-genre">Action,Adventure,Sci-Fi • 2h 10m</a>
-                  <p class="about-film">Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.</p>
-                  <p class="small-about-film">Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was...</p>
-                  <p class="small-about-film2">Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat...</p>
-                  <button onclick="window.location.href='ticket.html'" class="get-ticket">Get Tickets</button>
-                  <button class="ticket-price">2500 AMD/3500 AMD</button>
-                  <button class="more-about">More about movie</button>
-                </div> 
-                <a class="arrows" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="arrows next" onclick="plusSlides(1)">&#10095;</a>
+            <div id="slideshow-container">
+                <a class="arrows" onclick="plusSlides(-1);">&#10094;</a>
+                <a class="arrows next" onclick="plusSlides(1);">&#10095;</a>
             </div>
+            <div class="text-other">Other movies</div>
+            <div id="movie-container"></div>
             <video preload="auto" loop autoplay muted class="video" src="src/bg.webm"></video>
         </main>
     </div>
@@ -205,6 +173,7 @@
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/movies.js"></script>
 </body>
 
 </html>
