@@ -1,0 +1,115 @@
+.page__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__container {
+    z-index: 4;
+}
+
+.contact__title {
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 10px;
+}
+.contact__block {
+    padding: 10px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__info {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info__item{
+    padding: 0 6px;
+}
+.info__title {
+    font-family: 'Quicksand', sans-serif;
+    color: #b3b3b3;
+}
+.info__value a{
+    font-size: 20px;
+    color: #fff;
+    transition: all .15s linear;
+}
+.info__value a:hover{
+    color: #b3b3b3;
+}
+.contact__name {
+    display: flex;
+}
+.input__item {
+    margin: 4px;
+}
+._input{
+    width: 100%;
+    min-width: 250px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all .15s linear;
+}
+
+._input:hover{
+    border: 1px solid #f8a145;
+}
+
+._input:focus{
+    border: 1px solid #d35100;
+}
+
+.contact__text {
+    margin-top: 4px;
+    min-height: 200px;
+    min-width: 508px;
+    max-width: 508px;
+    transition: none;
+}
+.input__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact__send {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #d35100;
+    transition: all .15s linear;
+    color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+.contact__send:hover{
+    background-color: #f8a145;
+}
+@media (max-width: 900px){
+    .contact__title{
+        padding-top: 40px;
+    }
+}
+@media (max-width: 700px){
+    .contact__title{
+        padding-top: 0;
+    }
+}
+@media (max-width: 600px){
+    ._input{
+        min-width: 150px;
+    }
+}
