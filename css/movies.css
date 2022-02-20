@@ -21,7 +21,6 @@
     backface-visibility: hidden;
     border-radius: 12px;
   }
-
 .ticket_{
     transition: .5s ease;
     opacity: 0;
@@ -40,11 +39,9 @@
     width: 120px;
     border: none;
 }
-
 .ticket_:hover{
     background-color: #f8a145;
 }
-
 .movie-header{
     transition: .5s ease;
     opacity: 0;
@@ -57,21 +54,15 @@
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
 }
-
-
 .movie-poster{
     position: relative;
 }
-
-
-
 .movie-poster:hover .movie-photo {
     opacity: 0.5;
     border: 1px solid rgba(255, 255, 255);
     filter: blur(3px);
 
   }
-  
 .movie-poster:hover .ticket_ {
     opacity: 1;
   }
@@ -85,7 +76,6 @@
           margin: 16px;
         }
     }
-
     @media (max-width: 1050px){
         .movie-photo{
           height: 320px;
@@ -134,4 +124,5 @@
             font-size: 18px;
           }
     }
-      
+    
+    

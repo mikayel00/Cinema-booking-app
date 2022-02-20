@@ -9,7 +9,7 @@ const slides = [
   },
   {
     image: "img/movie_photo/hotel.png",
-    title: "Tansylvania",
+    title: "Hotel Transylvania: Transformania (2020)",
     genre: "Animation,Adventure,Comedy • 1h 27m",
     about: "After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to be seen whether they will be able to reverse this experiment.",
     smallAbout: "After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to be seen whether they...",
@@ -41,10 +41,11 @@ function movie(URL,movieName,genre,about,sAbout,sAbout2) {
   </div>`;
  }
 
- let data = [];
+ const data = [];
 
- for(let i=0;i<slides.length;i++){
-   let slide = movie(slides[i].image,slides[i].title,slides[i].genre,slides[i].about,slides[i].smallAbout,slides[i].smallAbout2);
+ for(let i = 0; i < slides.length; i++){
+  const { image, title, genre, about, smallAbout, smallAbout2 } = slides[i];
+  let slide = movie(image, title, genre, about, smallAbout, smallAbout2);
    data.push(slide);
  }
 
@@ -79,3 +80,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
 };
+

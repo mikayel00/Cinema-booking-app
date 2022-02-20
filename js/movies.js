@@ -26,8 +26,8 @@ function moviePoster(URL,header) {
     </div>
     `
 }
- let postersData = [];
- for(let i=0;i<movies.length;i++){
+ const postersData = [];
+ for(let i=0; i < movies.length; i++){
      let poster = moviePoster(movies[i].image,movies[i].header);
      postersData.push(poster);
  }
