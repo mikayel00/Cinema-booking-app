@@ -286,8 +286,8 @@
             </div>
             <div class="footer__newsletter">
                 <h2 class="footer__title">Subscribe to our Newsletter!</h2>
-                <form class="newsletter__form">
-                    <input type="email" placeholder="Email">
+                <form class="newsletter__form" onsubmit="return subFunction(event)">
+                    <input type="email" placeholder="Email" required>
                     <input type="submit" value="Subscribe">
                 </form>
                 <div class="footer__copy">
@@ -312,6 +312,7 @@
     </footer>
     <script src="js/menu.js"></script>
     <script src="js/ticket.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 
 </html>
