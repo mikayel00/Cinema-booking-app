@@ -176,7 +176,7 @@
         height: 25px;
     }
     .section{
-        margin: 5px 0;
+        margin: 6px 0;
         font-size: 16px;
     }
     .section__name {
@@ -241,4 +241,3 @@
         font-size: 16px;
     }
 }
-
