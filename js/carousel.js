@@ -5,15 +5,17 @@ const slides = [
     genre: "Action,Adventure,Fantasy • 2h 28m",
     about: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
     smallAbout: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous...",
-    smallAbout2: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell..."
+    smallAbout2: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell...",
+    trailer: "https://www.youtube.com/watch?v=JfVOs4VSpmA"
   },
   {
     image: "img/movie_photo/hotel.png",
-    title: "Hotel Transylvania: Transformania (2020)",
+    title: "Hotel Transylvania: Transformania (2021)",
     genre: "Animation,Adventure,Comedy • 1h 27m",
     about: "After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to be seen whether they will be able to reverse this experiment.",
     smallAbout: "After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to be seen whether they...",
-    smallAbout2: "After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to..."
+    smallAbout2: "After one experiment, Johnny turns into a monster and everyone else becomes human. Now it has to...",
+    trailer: "https://www.youtube.com/watch?v=ldBroBrV6Fg"
   },
   {
     image: "img/movie_photo/avatar.png",
@@ -21,12 +23,13 @@ const slides = [
     genre: "Action,Adventure,Sci-Fi • 2h 10m",
     about: "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.",
     smallAbout: "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was...",
-    smallAbout2: "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat..."
+    smallAbout2: "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat...",
+    trailer: "https://www.youtube.com/watch?v=EWXb-Twcbi4"
   }
 ]
 
 
-function movie(URL,movieName,genre,about,sAbout,sAbout2) {
+function movie(URL,movieName,genre,about,sAbout,sAbout2,link) {
   return `                
   <div class="mySlides fade">
   <img class="slide-photo" src="${URL}">
@@ -37,15 +40,15 @@ function movie(URL,movieName,genre,about,sAbout,sAbout2) {
   <p class="small-about-film2">"${sAbout2}"</p>
   <button onclick="window.location.href='ticket.html'" class="get-ticket">Get Tickets</button>
   <button class="ticket-price">2500 AMD/3500 AMD</button>
-  <button class="more-about">More about movie</button>
+  <button onclick="window.open('${link}','_blank')" class="more-about">More about movie</button>
   </div>`;
  }
 
  const data = [];
 
  for(let i = 0; i < slides.length; i++){
-  const { image, title, genre, about, smallAbout, smallAbout2 } = slides[i];
-  let slide = movie(image, title, genre, about, smallAbout, smallAbout2);
+  const { image, title, genre, about, smallAbout, smallAbout2, trailer } = slides[i];
+  let slide = movie(image, title, genre, about, smallAbout, smallAbout2, trailer);
    data.push(slide);
  }
 
